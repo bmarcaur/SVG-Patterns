@@ -110,24 +110,4 @@
       return self;
     }
   })
-})(Zepto);
-
-$('document').ready(function(){
-  $('svg').triangle({
-    // Base color of the drawing
-    color: '#484d79',
-    // Off color used with density
-    offColor: '#f5f5f5',
-    // Size of the triangles
-    size: 40,
-    // Variance of the colors
-    variance: {
-      min: -30,
-      max: 60,
-    },
-    // Animation Boolean
-    animate: true,
-    // Density of the colored triangles
-    density: 100,
-  });
-});
+})(window.Zepto || window.jQuery);
